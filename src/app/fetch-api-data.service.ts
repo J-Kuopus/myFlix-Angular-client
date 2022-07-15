@@ -15,6 +15,25 @@ export class FetchApiDataService {
   // Inject the HttpClient module to the constructor params
   constructor(private http: HttpClient) { }
 
+  private extractResponseData(res: any): any {
+    const body = res;
+    return body || {};
+  }
+
+  private handleError(error: HttpErrorResponse): any {
+    if (error.error instanceof ErrorEvent) {
+      console.error('Some error occured:', error.error.message);
+    } else {
+      console.error(
+        `Error Status code ${error.status}, ` +
+        `Error Body is: ${error.error}`
+      );
+    }
+    return throwError(
+      'Something bad happened; please try again later.'
+    );
+  }
+
   // API CALLS:
 
   // REGISTER new user
@@ -206,25 +225,6 @@ export class FetchApiDataService {
        map(this.extractResponseData),
        catchError(this.handleError)
      );
-  }
-
-  private extractResponseData(res: any): any {
-    const body = res;
-    return body || {};
-  }
-
-  private handleError(error: HttpErrorResponse): any {
-    if (error.error instanceof ErrorEvent) {
-      console.error('Some error occured:', error.error.message);
-    } else {
-      console.error(
-        `Error Status code ${error.status}, ` +
-        `Error Body is: ${error.error}`
-      );
-    }
-    return throwError(
-      'Something bad happened; please try again later.'
-    );
   }
 
 }
