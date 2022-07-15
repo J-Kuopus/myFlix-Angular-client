@@ -76,7 +76,7 @@ export class FetchApiDataService {
     // Get authorization from local storage
     const token = localStorage.getItem('token');
     return this.http
-      .get(apiUrl + `movies/$(title)`, {
+      .get(apiUrl + `movies/${title}`, {
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
         })
