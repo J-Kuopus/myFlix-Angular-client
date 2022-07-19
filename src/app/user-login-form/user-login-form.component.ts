@@ -4,7 +4,6 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-user-login-form',
   templateUrl: './user-login-form.component.html',
@@ -32,9 +31,8 @@ export class UserLoginFormComponent implements OnInit {
         // Add token and username to local storage
       localStorage.setItem('token', result.token);
       localStorage.setItem('user', result.user.Username);
-      this.snackBar.open(result, 'OK', {
-        duration: 2000
-      });
+      
+      this.router.navigate(['movies']);
     }, (result) => {
       console.log(result);
       this.snackBar.open(result, 'OK', {
