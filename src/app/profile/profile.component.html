@@ -16,15 +16,18 @@
         <!-- Edit Profile Information & Delete Profile -->
         <mat-card-actions class="user-profile-actions">
 
-            <button mat-raised-button (click)="openEditProfileDialog()" color="primary">
+            <button mat-raised-button 
+                    (click)="openEditProfileDialog()" 
+                    color="primary">
                 <mat-icon>edit</mat-icon>
                 Edit Profile
             </button>
-            <button mat-raised-button (click)="deleteProfile()" color="warn">
+            <button mat-raised-button 
+                    (click)="deleteProfile()" 
+                    color="warn">
                 <mat-icon>delete_forever</mat-icon>
                 Delete Profile
             </button>
-
         </mat-card-actions>
     </mat-card>
 
