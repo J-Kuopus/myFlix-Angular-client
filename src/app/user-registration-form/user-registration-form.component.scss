@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 $backgroundColor: #f8f9fa;
 $cardColor: #fff;
 $textColor: #343a40;
-$boxShadowColor: #e9ecef;
+$boxShadowColor: #2b2b2b;
 
 .signup-dialog {
     background-color: $cardColor;
     margin-top: 0px;
     box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .signup-dialog-title {
@@ -15,6 +18,7 @@ $boxShadowColor: #e9ecef;
 
 .signup-dialog-content {
     color: $textColor;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ::ng-deep .signup-custom>mat-dialog-container {
@@ -22,5 +26,9 @@ $boxShadowColor: #e9ecef;
 }
 
 .signup-actions {
-    display: flex
+    display: flex;  
+}
+
+.mat-raised-button {
+    font-family: 'Montserrat', sans-serif; 
 }
