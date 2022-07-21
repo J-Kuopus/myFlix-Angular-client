@@ -122,9 +122,11 @@ export class MovieCardComponent implements OnInit {
    * @function addFavoriteMovie
    */
   addToFavoriteMovies(id: string): void {
+    const token = localStorage.getItem('token');
     console.log(id);
-    this.fetchApiData.addFavoriteMovie(id).subscribe((result) => {
-      console.log(result);
+    alert('Movie added to favorites!');
+    this.fetchApiData.addFavoriteMovie(id).subscribe((response: any) => {
+      console.log(response);
       this.ngOnInit();
     })
   }
@@ -135,9 +137,11 @@ export class MovieCardComponent implements OnInit {
    * @function removeFavoriteMovie
    */
   removeFromFavoriteMovies(id: string): void {
+    const token = localStorage.getItem('token');
     console.log(id);
-    this.fetchApiData.removeFavoriteMovie(id).subscribe((result) => {
-      console.log(result);
+    alert('Movie removed from favorites!');
+    this.fetchApiData.removeFavoriteMovie(id).subscribe((response: any) => {
+      console.log(response);
       this.ngOnInit();
     })
   }
