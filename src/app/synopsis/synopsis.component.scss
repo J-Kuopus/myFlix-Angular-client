@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 $backgroundColor: #f8f9fa;
 $cardColor: #fff;
 $textColor: #343a40;
-$boxShadowColor: #e9ecef;
+$boxShadowColor: #2b2b2b;
 
 .synopsis-dialog {
     background-color: $cardColor;
     margin-top: 0px;
     box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .synopsis-dialog-title {
     color: $textColor;
+    font-weight: bold;
 }
 
 .synopsis-dialog-content {
