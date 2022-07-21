@@ -190,7 +190,7 @@ export class FetchApiDataService {
    * @param movieID 
    * @returns JSON object holding data about the updated user
    */
-  removeFavoriteMovie(movieID: any): Observable<any> {
+  removeFavoriteMovie(movieID: string): Observable<any> {
     // Get Authorization token stored in local storage
     const token = localStorage.getItem('token');
     // Get Username stored in local storage
