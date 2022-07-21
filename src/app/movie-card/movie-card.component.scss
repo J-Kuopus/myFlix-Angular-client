@@ -1,7 +1,9 @@
-$backgroundColor: #f8f9fa;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$backgroundColor: #c9c4c3;
 $cardColor: #fff;
 $textColor: #343a40;
-$boxShadowColor: #e9ecef;
+$boxShadowColor: #2b2b2b;
 
 .movie-view {
     display: flex;
@@ -10,6 +12,7 @@ $boxShadowColor: #e9ecef;
     justify-content: center;
     padding: 50px 0;
     background-color: $backgroundColor;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mat-card {
@@ -24,6 +27,7 @@ $boxShadowColor: #e9ecef;
     width: 280px;
     margin: 15px;
     padding: 20px 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mat-card-header {
@@ -33,12 +37,13 @@ $boxShadowColor: #e9ecef;
     color: $textColor;
 }
 
-.movies-title {
+.movie-title {
     display: flex;
     max-width: 210px;
     justify-content: center;
     text-align: center;
     line-height: normal;
+    font-weight: bold;
 }
 
 img {
@@ -51,4 +56,9 @@ img {
     position: absolute;
     right: 5px;
     top: 5px;
+}
+
+.mat-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
