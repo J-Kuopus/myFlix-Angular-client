@@ -1,7 +1,9 @@
-$backgroundColor: #f8f9fa;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$backgroundColor: #c9c4c3;
 $cardColor: #fff;
 $textColor: #343a40;
-$boxShadowColor: #e9ecef;
+$boxShadowColor: #2b2b2b;
 
 .user-profile-page {
     display: flex;
@@ -9,6 +11,7 @@ $boxShadowColor: #e9ecef;
     align-items: center;
     padding: 30px 40px;
     background-color: $backgroundColor;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -19,6 +22,7 @@ $boxShadowColor: #e9ecef;
     flex-direction: column;
     box-shadow: 10px 5px 5px $boxShadowColor;
     background-color: $cardColor;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .user-profile-card-header {
@@ -26,6 +30,7 @@ $boxShadowColor: #e9ecef;
     color: $textColor;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 
@@ -38,4 +43,8 @@ $boxShadowColor: #e9ecef;
     padding-bottom: 0;
     display: flex;
     justify-content: space-evenly;
+}
+
+.mat-raised-button {
+    font-family: 'Montserrat', sans-serif; 
 }
