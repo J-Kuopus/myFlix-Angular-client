@@ -35,7 +35,6 @@ export class ProfileComponent implements OnInit {
   getUser(): void {
     this.fetchApiData.getUser().subscribe((resp: any) => {
       this.user = resp;
-      console.log(this.user);
       return this.user;
     })
   }
@@ -61,7 +60,6 @@ export class ProfileComponent implements OnInit {
         });
       })
       this.fetchApiData.deleteUser().subscribe((result) => {
-        console.log(result);
         localStorage.clear();
       });
     }

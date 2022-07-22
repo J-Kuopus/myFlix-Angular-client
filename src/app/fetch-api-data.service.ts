@@ -21,7 +21,6 @@ export class FetchApiDataService {
    * @returns a new user object in JSON format
    */
   public userRegistration(userDetails: any): Observable<any> {
-    console.log(userDetails);
     return this.http
       .post(apiUrl + 'users', userDetails)
       .pipe(
