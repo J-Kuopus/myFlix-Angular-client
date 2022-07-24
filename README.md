@@ -13,6 +13,7 @@ This is a user interface built with Angular that connects to a database (MongoDB
 - A director dialog that displays information about the movie's director
 - A genre dialog that displays information about the movie's genre
 - A synopsis dialog that displays a description of what the movie is about
+- A toggle button for adding/removing movies from favorites list
 - A profile page where users can view their profile information
 - An edit dialog where users can edit and update their profile information
 
