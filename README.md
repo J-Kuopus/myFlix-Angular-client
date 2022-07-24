@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
+## Description
+
+This is a user interface built with Angular that connects to a database (MongoDB) to display movie information.
+
+## Key Features
+
+- A welcome screen where users can register an account and login to the website.
+- A movies screen that displays all of the movies, including the title, an image, director name, etc.
+- A director dialog that displays information about the movie's director
+- A genre dialog that displays information about the movie's genre
+- A synopsis dialog that displays a description of what the movie is about
+- A profile page where users can view their profile information
+- An edit dialog where users can edit and update their profile information
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
