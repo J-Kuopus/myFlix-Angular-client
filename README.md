@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a user interface built with Angular that connects to a database (MongoDB) to display movie information.
 
+## Images
+
 ## Key Features
 
 - A welcome screen where users can register an account and login to the website.
