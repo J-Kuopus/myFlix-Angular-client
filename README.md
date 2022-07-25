@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This is a user interface built with Angular that connects to a database (MongoDB) to display movie information.
+This is a user interface built with Angular and styled with Angular-Material that connects to a database (MongoDB) to display movie information.
 
 ## Images
 
@@ -25,6 +25,10 @@ Mobile version:
 - A toggle button for adding/removing movies from favorites list
 - A profile page where users can view their profile information
 - An edit dialog where users can edit and update their profile information
+
+## Tech Stack
+
+- Angular, Angular-Material
 
 ## Development server
 
