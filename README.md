@@ -8,6 +8,13 @@ This is a user interface built with Angular that connects to a database (MongoDB
 
 ## Images
 
+Web version:
+![Angular Web Image](img/angular-web.jpg?raw=true "Title")
+
+Mobile version:
+<br/>
+![Alt text](img/angular-mobile.jpg?raw=true "Title")
+
 ## Key Features
 
 - A welcome screen where users can register an account and login to the website.
