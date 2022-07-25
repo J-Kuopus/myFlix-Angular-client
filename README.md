@@ -15,6 +15,9 @@ Mobile version:
 <br/>
 ![Alt text](img/angular-mobile.jpg?raw=true "Title")
 
+## Link to live web page:
+https://j-kuopus.github.io/myFlix-Angular-client/
+
 ## Key Features
 
 - A welcome screen where users can register an account and login to the website.
